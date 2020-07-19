@@ -2,8 +2,8 @@ syntax = "proto3";
 package gymcpp;
 
 message State {
-	repeated float32 observation = 1; // request environment to make sense of this data
-	float32 reward  = 2;
+	repeated float observation = 1; // request environment to make sense of this data
+	float reward  = 2;
 	bool done = 3;
 	string info = 4;
 }

@@ -3,6 +3,6 @@ package gymcpp;
 
 import "state.proto";
 
-message StepRequest {
+message StepResponse {
     State current_state = 1;
 }

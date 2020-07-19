@@ -2,12 +2,12 @@ syntax = "proto3";
 package gymcpp;
 
 message Space {
-    enum SpaceType {
+    repeated int32 box_shape = 1;
+    repeated float box_high = 2;
+    repeated float box_low = 3;
+        enum SpaceType {
         DISCRETE = 0;
         BOX = 1;
     }
-    repated int32 box_shape = 1;
-    repated float box_high = 2;
-    repated float box_low = 3;
     SpaceType type = 4;
 }
