@@ -1,0 +1,15 @@
+syntax = "proto3";
+package gymcpp;
+
+import "environment_request.proto";
+import "environment_response.proto";
+import "reset_request.proto";
+import "reset_response.proto";
+import "step_request.proto";
+import "step_response.proto";
+
+service Gym {
+   rpc EnvironmentInfo(EnvironmentRequest) returns (EnvironmentResponse) {}
+   rpc Reset(ResetRequest) returns (ResetResponse) {}
+   rpc Step(StepRequest) returns (StepResponse) {}
+}
