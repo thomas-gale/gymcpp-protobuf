@@ -1,0 +1,9 @@
+syntax = "proto3";
+package gymcpp;
+
+import "space.proto";
+
+message EnvironmentResponse {
+    Space action_space = 1;
+    Space observation_space = 2;
+}

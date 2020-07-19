@@ -1,0 +1,6 @@
+syntax = "proto3";
+package gymcpp;
+
+message Action {
+	int32 
+}

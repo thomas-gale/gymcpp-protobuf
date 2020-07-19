@@ -1,0 +1,7 @@
+syntax = "proto3";
+package gymcpp;
+
+message StepRequest {
+    repeated float action = 1;
+    bool render = 2;
+}
